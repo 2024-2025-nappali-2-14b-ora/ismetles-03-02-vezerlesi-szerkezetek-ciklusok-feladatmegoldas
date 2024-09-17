@@ -24,4 +24,5 @@ namespace SzamelmeletProjekt
             return osztok.OrderBy(szam => szam).ToList();
         }
     }
+
 }
