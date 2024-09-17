@@ -2,4 +2,7 @@
 using SzamelmeletProjekt;
 
 Console.WriteLine("Hello, World!");
-Szamelmelet.GetOsztok(6);
+List<int> osztok = Szamelmelet.GetOsztok(6);
+
+foreach (int oszto in osztok)
+    Console.Write($"{oszto}, ");

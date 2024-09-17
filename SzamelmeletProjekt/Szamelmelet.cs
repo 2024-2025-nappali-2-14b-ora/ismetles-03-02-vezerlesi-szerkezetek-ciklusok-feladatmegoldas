@@ -17,11 +17,11 @@ namespace SzamelmeletProjekt
                 if (szam < 0)
                     szam = Math.Abs(szam);
 
-                for (int i = 2; i < (szam / 2); i = i + 1)
+                for (int i = 2; i <= (szam / 2); i = i + 1)
                     if (szam % i == 0)
                         osztok.Add(i);
             }
-            return osztok.ToList();
+            return osztok.OrderBy(szam => szam).ToList();
         }
     }
 }
