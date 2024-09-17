@@ -23,6 +23,48 @@ namespace SzamelmeletProjekt
             }
             return osztok.OrderBy(szam => szam).ToList();
         }
-    }
+        public static int GetOsztokOsszege(int szam)
+        {
+            return 0;
+        }
 
+        public static bool TokeletesE(int szam)
+        {
+            return false;
+        }
+
+        public static int GetOsztokSzama(int szam)
+        { return 0; }
+
+        public static bool PrimszamE(int szam)
+        {
+            return false;
+        }
+
+        public static void KiirLista(List<int> list)
+        {
+        }
+
+        public static List<int> GetPrimek(int veg)
+        {
+            return new List<int>();
+        }
+
+        public static List<int> GetPrimek(int kezdet, int veg)
+        {
+            return new List<int>();
+        }
+
+        public static List<int> GetTokeletesek(int veg)
+        { 
+            return new List<int>();
+        }
+
+        public static List<int> GetTokeletesek(int kezdet, int veg) 
+        { 
+            return new List<int>(); 
+        }
+
+
+    }
 }
