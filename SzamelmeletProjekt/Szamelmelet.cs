@@ -9,16 +9,18 @@ namespace SzamelmeletProjekt
         {
             // Pl. 6 osztói 1,2,3,
             HashSet<int> osztok = new HashSet<int>();
-            osztok.Add(szam);
-            osztok.Add(1);
+            if (szam != 0)
+            {
+                osztok.Add(szam);
+                osztok.Add(1);
 
-            if (szam < 0)
-                szam = Math.Abs(szam);
+                if (szam < 0)
+                    szam = Math.Abs(szam);
 
-            for (int i = 2;i<(szam/2);i=i+1)
-                if (szam % i == 0)
-                    osztok.Add(i);
-
+                for (int i = 2; i < (szam / 2); i = i + 1)
+                    if (szam % i == 0)
+                        osztok.Add(i);
+            }
             return osztok.ToList();
         }
     }
