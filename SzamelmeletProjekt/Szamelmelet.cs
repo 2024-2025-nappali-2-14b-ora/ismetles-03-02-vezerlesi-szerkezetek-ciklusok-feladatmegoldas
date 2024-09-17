@@ -11,6 +11,9 @@ namespace SzamelmeletProjekt
             HashSet<int> osztok = new HashSet<int>();
             osztok.Add(szam);
             osztok.Add(1);
+            for (int i = 2;i<(szam/2);i=i+1)
+                if (szam % i == 0)
+                    osztok.Add(i);
 
             return osztok.ToList();
         }
